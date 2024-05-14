@@ -1,4 +1,4 @@
-<center><h1>Nerve Check</h1></center>
+<center><h1>AI Interviewer</h1></center>
 
 ![INNOHACKS PPT](https://user-images.githubusercontent.com/76547274/208083706-7f656b5d-3610-49c9-a63f-8bc515af274f.png)
 ![INNOHACKS PPT (1)](https://user-images.githubusercontent.com/76547274/208085965-594d59b1-4951-4e5d-9125-10a46c2d3c3f.png)
