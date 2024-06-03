@@ -52,7 +52,8 @@ def video_analysis():
 def speech():
     # initialize the recognizer
     r = sr.Recognizer()
-    st.write("Please talk and say QUIT to stop: ")
+    st.write("Please speak your content before the mic and prepare. Try speaking out your introduction before the Interviewer for a sample.")
+    st.write("Say QUIT to stop: ")
     l=0
     i=0
     time_1=time.time()
@@ -63,7 +64,7 @@ def speech():
             r.adjust_for_ambient_noise(source,duration=0.3)
         #read the audio data from the default microphone
             audio = r.listen(source)
-            st.write("Recognizing...")
+            st.write("Recognizing your speech, please keep speaking... ")
 
         #convert speech to text
             try:
@@ -79,12 +80,11 @@ def speech():
     if((time_2-time_1)/l>0.15): print("Fast Speech")
     elif((time_1-time_2)/l>0.15): print("Slow Speech")
     else: print("Nice Speed!")
-    
-    st.write('hello')
+
     
 def about():
     st.title("About")
-    st.write("This is a brief description about the project, its purpose, and the team behind it.")
+    st.write("AI Interviewer offers a multi-pronged approach to help you nail your online interviews.  It simulates a real interview setting using your webcam, allowing you to practice in a familiar environment.  By analyzing your facial expressions with a deep learning model, it provides feedback on your emotional state during the interview, helping you project confidence.  Your speech is also analyzed for factors like pacing and stammering, so you can refine your communication skills for clear and confident delivery.  To track your progress, AI Interviewer provides personalized feedback reports after each practice session, summarizing your facial expressions, eye focus, speech delivery, and any future functionalities. You can access past recordings and reports to see your improvement over time.")
 
 def project_description():
     st.title("Project Description")
